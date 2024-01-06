@@ -1,20 +1,22 @@
 .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     z-index: 0;
-    width: 400px;
-    height: 609px;
+    width: 250px;
+    height: 250px;
     position: absolute;
-    top: 0;
+    top: -20%;
     right: 15%;
     bottom: 0;
     left: auto;
     margin: auto;
-    opacity: 0;
+    opacity: 1;
 
-    svg {
-        width: 100%;
-        height: auto;
-        bottom: 0;
-        transform: rotateZ(30deg) !important;
+    .svg-container {
+        stroke: #ffd126;
+        stroke-width: 10px;
     }
 
     .solid-logo {
@@ -25,13 +27,34 @@
         left: 0;
         margin: auto;
         width: 100%;
-        opacity: 0;
+        opacity: 1;
         transform: rotateZ(30deg);
         z-index: 1;
     }
+
+    .logo-wrapper {
+        position: relative;
+        width: 250px;
+        height: 250px
+    }
+
+    #outline-logo,
+    #original-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
-.svg-container {
-    stroke: #ffd126;
-    stroke-width: 10px;
+
+
+
+
+
+
+g {
+    overflow: hidden;
+    visibility: hidden;
 }
