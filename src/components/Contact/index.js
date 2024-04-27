@@ -4,10 +4,13 @@ import "./index.scss";
 import { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
+import { MapContainer, TileLayer, useMap } from 'react-leaflet'
+import { Marker } from "react-leaflet";
+import { Popup } from "react-leaflet";
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState("text-animate");
-    const refForm = useRef(null)
+    const refForm = useRef()
 
     useEffect(() => {
         const timeoutId = setTimeout(() => {
@@ -88,6 +91,29 @@ const Contact = () => {
                             </ul>
                         </form>
                     </div>
+                </div>
+                <div className="info-map">
+                    Patrik Kusnir,
+                    <br />
+                    Moscow district, Nakhabino
+                    <br />
+                    Russia, <br />
+                    <span>patrikusnir1@gmail.com</span>
+
+
+                </div>
+                <div className="map-wrap">
+                    <MapContainer center={[55.841735, 37.184734]} zoom={10} scrollWheelZoom={true}>
+                        <TileLayer
+                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        <Marker position={[55.841735, 37.184734]}>
+                            <Popup>
+                                Here I live for now
+                            </Popup>
+                        </Marker>
+                    </MapContainer>
                 </div>
             </div>
 

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin';
 import gsap from 'gsap-trial';
 import './index.scss';
-import LogoP from "../../../assets/images/patrik.png"
+import LogoP from "../../../assets/images/photo2-removebg.png"
 import Loader from 'react-loaders';
 
 const Logo = () => {
