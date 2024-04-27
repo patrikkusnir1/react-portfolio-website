@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { useEffect, useState } from "react"
 import LogoTitle from "../../assets/images/patrik.png";
-import  AnimatedLetters from "../AnimatedLetters"
+import AnimatedLetters from "../AnimatedLetters"
 import Logo from "./Logo"
 
 import "./index.scss"
@@ -12,18 +12,18 @@ import "./index.scss"
 const Home = () => {
     const [letterClass, setLetterClass] = useState("text-animate")
     const nameArray = ["a", "t", "r", "i", "k"];
-    const jobArray = ["w", "e", "b", "d", "e", "v", "e", "l", "o", "p", "e", "r", "."]
+    const jobArray = ["w", "e", "b", " ", "d", "e", "v", "e", "l", "o", "p", "e", "r", "."]
 
 
     useEffect(() => {
-    const timeoutId = setTimeout(() => {
-        setLetterClass("text-animate-hover");
-    }, 4000);
+        const timeoutId = setTimeout(() => {
+            setLetterClass("text-animate-hover");
+        }, 4000);
 
-    return () => {
-        clearTimeout(timeoutId);
-    };
-}, []);
+        return () => {
+            clearTimeout(timeoutId);
+        };
+    }, []);
 
     return (
         <div className="container home-page">
@@ -34,14 +34,14 @@ const Home = () => {
                     <br />
                     <span className={letterClass}>I</span>
                     <span className={`${letterClass} _14`}>'m</span>
-                <img src={LogoTitle} alt="developer" />
-                <AnimatedLetters letterClass={letterClass}
-                strArray={nameArray} 
-                idx={15}/>
-                <br />
-                <AnimatedLetters letterClass={letterClass}
-                strArray={jobArray} 
-                idx={22}/>
+                    <img src={LogoTitle} alt="developer" />
+                    <AnimatedLetters letterClass={letterClass}
+                        strArray={nameArray}
+                        idx={15} />
+                    <br />
+                    <AnimatedLetters letterClass={letterClass}
+                        strArray={jobArray}
+                        idx={22} />
                 </h1>
                 <h2>Frontend developer / Pharmacist / Scientist</h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>

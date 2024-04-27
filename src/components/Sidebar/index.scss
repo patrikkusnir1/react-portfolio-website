@@ -6,7 +6,6 @@
     top: 0;
     z-index: 3;
     min-height: 500px;
-}
 
     .logo {
         display: block;
@@ -25,7 +24,7 @@
         }
     }
 
-nav {
+    nav {
     display: block;
     text-align: center;
     position: absolute;
@@ -94,15 +93,15 @@ nav {
         }
     }
 }
-ul {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    display: block;
-    padding: 0;
-    list-style: none;
-    text-align: center;
-    margin: 0;
+    ul {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
 
     li {
         a {
@@ -116,7 +115,6 @@ ul {
         &:hover svg{
             color: #ffd126
         }
-
-        }
     }
-
+    }
+}

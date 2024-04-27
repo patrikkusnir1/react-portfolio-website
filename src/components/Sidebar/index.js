@@ -19,34 +19,34 @@ const Sidebar = () => (
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
 
-            <NavLink exact="true" activeclassname="active" className="contact-link"to="/contact">
+            <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact">
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" className="contact-page" />
             </NavLink>
-            </nav>
-            <ul>
-                <li>
-                    <a target="_blank" 
-                    rel="noreferrer" 
+        </nav>
+        <ul>
+            <li>
+                <a target="_blank"
+                    rel="noreferrer"
                     href="https://www.linkedin.com/in/patrik-ku%C5%A1n%C3%ADr-6abb1a109/">
                     <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" 
-                    rel="noreferrer" 
+                </a>
+            </li>
+            <li>
+                <a target="_blank"
+                    rel="noreferrer"
                     href="https://github.com/patrikkusnir1">
                     <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
-                    </a>
-                </li>
-                <li>
-                    <a target="_blank" 
-                    rel="noreferrer" 
+                </a>
+            </li>
+            <li>
+                <a target="_blank"
+                    rel="noreferrer"
                     href="skype:live:metalangel8">
                     <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
-                    </a>
-                </li>
-            </ul>
-        
+                </a>
+            </li>
+        </ul>
+
     </div>
 )
 
