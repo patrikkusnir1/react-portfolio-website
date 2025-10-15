@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import { DrawSVGPlugin } from 'gsap-trial/DrawSVGPlugin';
-import gsap from 'gsap-trial';
+import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin';
+import gsap from 'gsap';
 import './index.scss';
 import LogoP from "../../../assets/images/photo2-removebg.png"
 import Loader from 'react-loaders';
