@@ -11,8 +11,8 @@ import "./index.scss"
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState("text-animate")
-    const nameArray = ["a", "t", "r", "i", "k"];
-    const jobArray = ["w", "e", "b", " ", "d", "e", "v", "e", "l", "o", "p", "e", "r", "."]
+    const nameArray = ["a", "t", "r", "i", "k", ","];
+    const jobArray = ["p", "h", "a", "r", "m", "a", "c", "i", "s", "t"]
 
 
     useEffect(() => {
@@ -43,7 +43,7 @@ const Home = () => {
                         strArray={jobArray}
                         idx={22} />
                 </h1>
-                <h2>Frontend developer / Pharmacist / QA specialist</h2>
+                <h2>Pharmacist / QA specialist</h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
             <Logo />
