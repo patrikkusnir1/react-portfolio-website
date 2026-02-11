@@ -2,14 +2,13 @@ import "./index.scss";
 import AnimatedLetters from "../AnimatedLetters";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faAngular,
-    faCss3,
-    faGitAlt,
-    faHtml5,
-    faSquareJs,
-    faReact,
-} from '@fortawesome/free-brands-svg-icons'
+// import {
+//     faCss3,
+//     faGitAlt,
+//     faSquareJs,
+//     faReact,
+// } from '@fortawesome/free-brands-svg-icons';
+import {faSkullCrossbones, faTablets, faFlask, faCapsules, faBong, faVial} from '@fortawesome/free-solid-svg-icons'
 import Loader from "react-loaders";
 
 const About = () => {
@@ -36,7 +35,7 @@ const About = () => {
                         />
                     </h1>
                     <p>
-                        I'm a pharmacist, looking for job in toxicology and quality assessment field.
+                        I'm a pharmacist, with job experience in toxicology and quality assessment field.
                     </p>
                     <p>
                         I'm quiet confident, naturally curious, and perpetually working on
@@ -44,28 +43,28 @@ const About = () => {
                     </p>
                     <p>
                         If I need to define myself in one sentence that would be a family person, husband of a beautiful wife, a chess fanatic,
-                        train travel enthusiast, and pharma - obsessed!
+                        train travel enthusiast, and pharma - obsessed!. I also learn programming. 
                     </p>
                 </div>
                 <div className="stage-cube-cont">
                     <div className="cube-spinner">
                         <div className="face1">
-                            <FontAwesomeIcon icon={faAngular} color={"#dd0033"} />
+                            <FontAwesomeIcon icon={faSkullCrossbones} color={"#dd0033"} />
                         </div>
                         <div className="face2">
-                            <FontAwesomeIcon icon={faHtml5} color={"#f06529"} />
+                            <FontAwesomeIcon icon={faTablets} color={"#f06529"} />
                         </div>
                         <div className="face3">
-                            <FontAwesomeIcon icon={faCss3} color={"#28a4d9"} />
+                            <FontAwesomeIcon icon={faFlask} color={"#28a4d9"} />
                         </div>
                         <div className="face4">
-                            <FontAwesomeIcon icon={faReact} color={"#5ed4f4"} />
+                            <FontAwesomeIcon icon={faCapsules} color={"#5ed4f4"} />
                         </div>
                         <div className="face5">
-                            <FontAwesomeIcon icon={faSquareJs} color={"#efd81d"} />
+                            <FontAwesomeIcon icon={faBong} color={"#efd81d"} />
                         </div>
                         <div className="face6">
-                            <FontAwesomeIcon icon={faGitAlt} color={"#ec4d28"} />
+                            <FontAwesomeIcon icon={faVial} color={"#ec4d28"} />
                         </div>
                     </div>
                 </div>

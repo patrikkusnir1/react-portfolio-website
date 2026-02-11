@@ -3,7 +3,7 @@ import "./index.scss"
 import LogoS from "../../assets/images/patrik.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUser, faHome, faEnvelope, faSuitcase } from "@fortawesome/free-solid-svg-icons"
-import { faLinkedin, faGithub, faTelegram } from "@fortawesome/free-brands-svg-icons"
+import { faLinkedin, faWhatsapp, faTelegram } from "@fortawesome/free-brands-svg-icons"
 
 const Sidebar = () => (
   <div className="nav-bar">
@@ -57,12 +57,8 @@ const Sidebar = () => (
         </a>
       </li>
       <li>
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/patrikkusnir1"
-        >
-          <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+        <a target="_blank" rel="noreferrer" href="https://wa.me/79186015947">
+          <FontAwesomeIcon icon={faWhatsapp} color="#4d4d4e" />
         </a>
       </li>
       <li>
